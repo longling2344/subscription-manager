@@ -5689,8 +5689,8 @@ function getCurrentTime(config) {
     isoString: currentTime.toISOString()
   };
 }
-
-export default {
+export default function onRequest(context)
+//export default {
   async fetch(request, env, ctx) {
     const url = new URL(request.url);
 
